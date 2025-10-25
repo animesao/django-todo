@@ -14,7 +14,7 @@ A simple web application for managing tasks (todo list) built with Django.
 
 1. Clone the repository:
    ```
-   git clone <repository-url>
+   git clone https://github.com/animesao/django-todo.git
    cd django-todo-app
    ```
 
