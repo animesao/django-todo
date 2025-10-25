@@ -1,10 +1,102 @@
 # ✨ Django Todo App
 
-> 🌟 Красивое веб-приложение для управления задачами с персональными списками дел, построенное на Django
+> 🌟 Beautiful web application for managing tasks with personal todo lists, built with Django
 
 [![Django](https://img.shields.io/badge/Django-5.2.7-green.svg)](https://www.djangoproject.com/)
 [![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+## 🚀 Features
+
+### Core Features
+- ✅ **Add tasks** with title and description
+- 🔄 **Mark tasks** as complete or incomplete
+- ✏️ **Edit existing tasks**
+- 🗑️ **Delete tasks**
+- 📋 **View all tasks** in a convenient list
+
+### New Features
+- 👤 **User registration** for personal todo lists
+- 🔐 **Authentication** with secure login/logout
+- 🎨 **Modern design** with gradients and animations
+- 📱 **Responsive interface** for mobile devices
+- 🌈 **Glassmorphism effects** and smooth transitions
+
+## 📦 Installation
+
+### 1. Clone the repository:
+```bash
+git clone https://github.com/animesao/django-todo.git
+cd django-todo-app
+```
+
+### 2. Create a virtual environment:
+```bash
+python -m venv venv
+```
+
+### 3. Activate the virtual environment:
+- **Windows:** `venv\Scripts\activate`
+- **macOS/Linux:** `source venv/bin/activate`
+
+### 4. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+### 5. Run database migrations:
+```bash
+python manage.py migrate
+```
+
+### 6. Run the development server:
+```bash
+python manage.py runserver
+```
+
+### 7. Open your browser and navigate to:
+```
+http://127.0.0.1:8000/
+```
+
+## 🎯 Usage
+
+### For new users:
+1. **Register** - create an account
+2. **Login** - use your credentials
+3. **Manage tasks** - add, edit, delete tasks
+
+### Basic actions:
+- 🏠 Navigate to the home page to see all tasks
+- ➕ Click "Add New Task" to create a new task
+- ✅/❌ Use buttons next to tasks to mark completion
+- ✏️ Edit tasks as needed
+- 🗑️ Delete completed or unnecessary tasks
+
+## 👨‍💼 Admin Interface
+
+Access the Django admin interface at:
+```
+http://127.0.0.1:8000/admin/
+```
+
+## 🛠️ Technologies
+
+- **Backend:** Django 5.2.7
+- **Frontend:** HTML5, CSS3 (modern styling)
+- **Database:** SQLite (default)
+- **Authentication:** Django Auth
+- **Fonts:** Inter (Google Fonts)
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+# ✨ Django Todo App (Русская версия)
+
+> 🌟 Красивое веб-приложение для управления задачами с персональными списками дел, построенное на Django
 
 ## 🚀 Возможности
 
@@ -88,16 +180,6 @@ http://127.0.0.1:8000/admin/
 - **Authentication:** Django Auth
 - **Fonts:** Inter (Google Fonts)
 
-## 🤝 Вклад в проект
-
-Мы приветствуем вклад в развитие проекта!
-
-1. Форкните репозиторий
-2. Создайте ветку для вашей фичи: `git checkout -b feature/amazing-feature`
-3. Зафиксируйте изменения: `git commit -m 'Add amazing feature'`
-4. Отправьте в ветку: `git push origin feature/amazing-feature`
-5. Создайте Pull Request
-
 ## 📄 Лицензия
 
 Этот проект является открытым исходным кодом и доступен под лицензией [MIT](LICENSE).
@@ -105,8 +187,8 @@ http://127.0.0.1:8000/admin/
 ---
 
 <div align="center">
-  <p><strong>Создано с ❤️ с помощью Django</strong></p>
+  <p><strong>Created with ❤️ using Django</strong></p>
   <p>
-    <a href="#django-todo-app">Наверх ↑</a>
+    <a href="#django-todo-app">Top ↑</a>
   </p>
 </div>
