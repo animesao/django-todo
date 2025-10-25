@@ -1,0 +1,30 @@
+{% extends 'todo/base.html' %}
+
+{% block title %}My Tasks{% endblock %}
+
+{% block content %}
+    <a href="{% url 'task_add' %}" class="btn btn-primary">➕ Add New Task</a>
+
+    {% for task in tasks %}
+        <div class="task-card {% if task.completed %}completed{% endif %}">
+            <div class="task-title">{{ task.title }}</div>
+            {% if task.description %}
+                <div class="task-description">{{ task.description }}</div>
+            {% endif %}
+            <div class="task-meta">Created: {{ task.created_at|date:"M j, Y g:i A" }}</div>
+            <div class="task-actions">
+                <a href="{% url 'task_toggle' task.pk %}" class="btn {% if task.completed %}btn-secondary{% else %}btn-success{% endif %}">
+                    {% if task.completed %}↩️ Mark Incomplete{% else %}✅ Mark Complete{% endif %}
+                </a>
+                <a href="{% url 'task_edit' task.pk %}" class="btn btn-primary">✏️ Edit</a>
+                <a href="{% url 'task_delete' task.pk %}" class="btn btn-danger">🗑️ Delete</a>
+            </div>
+        </div>
+    {% empty %}
+        <div class="empty-state">
+            <h3>🎯 No tasks yet!</h3>
+            <p>Start building your productivity by adding your first task.</p>
+            <a href="{% url 'task_add' %}" class="btn btn-primary">Create Your First Task</a>
+        </div>
+    {% endfor %}
+{% endblock %}
